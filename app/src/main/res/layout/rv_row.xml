@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:padding="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/stroke_color"
+        app:cardElevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Media -->
+            <ImageView
+                android:id="@+id/dealImage"
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                android:contentDescription="@string/content_description_media"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_media_stop_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title, secondary and supporting text -->
+                <TextView
+                    android:id="@+id/dealTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#212121"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                <TextView
+                    android:id="@+id/dealLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121" />
+
+                <TextView
+                    android:id="@+id/dealDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121" />
+
+            </LinearLayout>
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/edit_deal"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="37dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:onClick="EditDeal"/>
+
+                <ImageButton
+                    android:id="@+id/delete_deal"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_baseline_delete_forever_24"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:onClick="DeleteDeal"/>
+
+                <TextView
+                    android:id="@+id/dealPrice"
+                    android:layout_width="77dp"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:layout_marginStart="80dp"
+                    android:textColor="#212121"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="180dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
