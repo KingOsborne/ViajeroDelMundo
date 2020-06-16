@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "311225066422",
+    "firebase_url": "https://viajerodelmundo-ee2f1.firebaseio.com",
+    "project_id": "viajerodelmundo-ee2f1",
+    "storage_bucket": "viajerodelmundo-ee2f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311225066422:android:a6ead2d3485807c83f5717",
+        "android_client_info": {
+          "package_name": "com.example.viajerodelmundo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311225066422-2j44vj8fn533hhhd0h0s0adesm62l65a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.viajerodelmundo",
+            "certificate_hash": "07fdce010629a18304801a487a6a99c1b8d9eca7"
+          }
+        },
+        {
+          "client_id": "311225066422-7n5p9hejogcg7asrlkonu9a4qmk2h1dd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLi-Rs0iNWHyO0cC6NID1eF_7min5z_L0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311225066422-7n5p9hejogcg7asrlkonu9a4qmk2h1dd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

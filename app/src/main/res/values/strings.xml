@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ViajeroDelMundo</string>
+    <string name="deal_title">Deal Title</string>
+    <string name="price_hint">Price (Numbers Only)</string>
+    <string name="location_hint">Location</string>
+    <string name="description_hint">Description</string>
+    <string name="save_menu">save</string>
+    <string name="content_description_media">Image</string>
+    <string name="logout">Logout</string>
+    <string name="add_new_deal">Add New Deal</string>
+</resources>
