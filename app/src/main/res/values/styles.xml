@@ -15,8 +15,8 @@
 
     <style name="ThemeOverlay.App.Card" parent="">
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorSurface">#ff3d00</item>
-        <item name="colorOnSurface">#ff3d00</item>
+        <item name="colorSurface">#8d6e63</item>
+        <item name="colorOnSurface">#8d6e63</item>
     </style>
 
     <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">

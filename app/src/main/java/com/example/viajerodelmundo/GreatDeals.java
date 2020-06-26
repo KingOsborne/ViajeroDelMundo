@@ -1,5 +1,7 @@
 package com.example.viajerodelmundo;
 
+import com.google.firebase.storage.StorageReference;
+
 import java.io.Serializable;
 
 public class GreatDeals implements Serializable  {
@@ -10,15 +12,26 @@ public class GreatDeals implements Serializable  {
     private String location;
     private String imageurl;
 
+    public String getImageName() {
+        return imageName;
+    }
+
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
+    }
+
+    private String imageName;
+
     public GreatDeals(){}
 
-    public GreatDeals(String title, String desc, String price, String location, String imageurl) {
+    public GreatDeals(String title, String desc, String price, String location, String imageurl, String imageName) {
         //this.id = id;
         this.title = title;
         this.desc = desc;
         this.price = price;
         this.location = location;
         this.imageurl = imageurl;
+        this.imageName = imageName;
     }
 
     public String getId() {

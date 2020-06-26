@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="64dp"
         android:layout_marginRight="64dp"
         app:boxBackgroundMode="outline"
@@ -113,4 +113,33 @@
             android:layout_height="wrap_content"
             android:hint="Description" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/containedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescL"
+        app:icon="@drawable/ic_baseline_add_circle_outline_24"
+        android:text="Upload New Image"
+        android:textColor="#ffffff"
+        android:backgroundTint="#8d6e63"
+        app:iconTint="#ffffff"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="322dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containedButton"
+        app:srcCompat="@android:color/transparent" />
+
+    @drawable/ic_action_name
+
 </androidx.constraintlayout.widget.ConstraintLayout>
